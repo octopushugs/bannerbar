@@ -6,13 +6,9 @@
 		/*
 			BannerBar v1.0
 			Author: Mike Foster, www.ninearmoctopus.com;
-			Thanks to www.smashingmagazine.com for providing the icon set. You can find the whole package with a variety of colors at:
-			http://www.smashingmagazine.com/2010/07/gcons-free-all-purpose-icons-for-designers-and-developers-100-icons-psd/
+			Thanks to Bogdan Rosu, http://www.flaticon.com/packs/glypho for providing the icon set. You can find the whole package at:
+			http://www.flaticon.com/packs/glypho
 		*/
-		body {
-			background-color: #eeeeee;
-		
-		}
 		/* 
 			All the banner components need to live inside a .banner-parent to make sure that it sticks to the left side of the page.
 		*/
@@ -28,49 +24,42 @@
 		.banner-item p {
 			margin: 0px;
 		}
+		.banner-sub-item {
+
+		}
 		/*
 			.banner-base is where you can make adjustments to the color and size of the menu bar.
 		*/
 		.banner-base {
+			background-color: #eeeeee;
 			width: 8%;
 			height: 100%;
 			padding-top: 2%;
 			padding-bottom: 2%;
-			background-color: black;
 			position: fixed;
-			color: white;
 			text-align: center;
 		}
-		.banner1 {
-			background-color: green;
+		.banner {
+			background-color: #eeeeee;
 			float: left;
-			display: inline-block;
+			display: none;
 			position: absolute;
-			border-color: green;
-			width: 150px;
+			width: 100%;
 			height: 150px;
-			opacity: 0.5;
+			
 			-webkit-transition: width 1s;
 			-webkit-transition-timing-function: linear;
 			transition: width 1s;
 			transition-timing-function: linear;
 		}
-		.banner2 {
-			background-color: yellow;
-			display: inline-block;
-			float: right;
-			position: relative;
-			border-color: yellow;
-			width: 150px;
-			height: 150px;
-			opacity: 0.5;
-			-webkit-transition: width 1s;
-			-webkit-transition-timing-function: linear;
-			transition: width 1s;
-			transition-timing-function: linear;
-			z-index: 2;
+		.banner-item:hover .banner {
+			display: block;
+			position: fixed;
+			width: 100%;
 		}
-		.banner1:hover, .banner1:hover ~ .banner2 {
+		.banner:hover {
+			display: block;
+			position: fixed;
 			width: 100%;
 		}
 		.user {
@@ -103,6 +92,46 @@
 			width: 32px;
 			height: 32px;
 		}
+		.search {
+			background-image: url("blue-icons/search.png");
+			display: inline-block;
+			position: relative;
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			float: center;
+			width: 32px;
+			height: 32px;
+		}
+		.chat {
+			background-image: url("blue-icons/chat.png");
+			display: inline-block;
+			position: relative;
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			float: center;
+			width: 32px;
+			height: 32px;
+		}
+		.tag {
+			background-image: url("blue-icons/tag.png");
+			display: inline-block;
+			position: relative;
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			float: center;
+			width: 32px;
+			height: 32px;
+		}
+		.mail {
+			background-image: url("blue-icons/email.png");
+			display: inline-block;
+			position: relative;
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			float: center;
+			width: 32px;
+			height: 32px;
+		}
 	</style>
 </head>
 <body>
@@ -114,11 +143,28 @@
 			</div>
 			<div class="banner-item">
 				<span class="user"></span>
+				<div class="banner">
+					<div class="banner-sub-item">
+						<span class="mail"></span>
+					</div>
+				</div>
 				<p>Profile</p>
+			</div>
+			<div class="banner-item">
+				<span class="tag"></span>
+				<p>Shop</p>
+			</div>
+			<div class="banner-item">
+				<span class="search"></span>
+				<p>Search</p>
 			</div>
 			<div class="banner-item">
 				<span class="phone"></span>
 				<p>Contact</p>
+			</div>
+			<div class="banner-item">
+				<span class="chat"></span>
+				<p>Support</p>
 			</div>
 		</div>
 	</div>
