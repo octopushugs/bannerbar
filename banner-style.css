@@ -14,7 +14,7 @@
 	left: 0;
 }
 .banner-item {
-margin-bottom: 50%;
+padding-bottom: 50%;
 	color: black; /* Change this to make the icons(if SVG) and text a different color */
 }
 .banner-item p {
@@ -25,11 +25,8 @@ margin-bottom: 50%;
 	width: 32px;
 }
 .banner-sub-item {
-	display: inline-block;
-	padding-top: 4%;
-	padding-bottom: 4%;
-	padding-left: 3%;
-	padding-right: 3%;
+	display: table-cell;
+	vertical-align: middle;
 	height: 64px;
 	width: 64px;
 }
@@ -60,12 +57,12 @@ margin-bottom: 50%;
 	transition-timing-function: linear;
 }
 .banner-item:hover .banner {
-	display: block;
+	display: table;
 	position: fixed;
 	width: 100%;
 }
 .banner:hover {
-	display: block;
+	display: table;
 	position: fixed;
 	width: 100%;
 }
