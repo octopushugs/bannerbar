@@ -53,30 +53,37 @@ padding-bottom: 50%;
 .banner {
 	background-color: #eeeeee;
 	float: left;
-	display: none;
+	display: table;
 	position: absolute;
 	margin-left: 8%;
-	width: 100%;
+	width: 0px;
 	height: 18%;
 	overflow: auto;
 	z-index: 3;
-	-webkit-transition: width 1s;
+	-webkit-transition: width 0.25s;
 	-webkit-transition-timing-function: linear;
-	transition: width 1s;
+	transition: width 0.25s;
 	transition-timing-function: linear;
+}
+.banner * {
+	display: none;
 }
 .banner .banner-sub-item {
 	float: left;
 }
 .banner-item:hover .banner {
-	display: table;
 	position: fixed;
 	width: 100%;
 }
 .banner:hover {
-	display: table;
 	position: fixed;
 	width: 100%;
+}
+.banner:hover .banner * {
+	display: inline-block;
+}
+.banner-item:hover .banner * {
+	display:inline-block;
 }
 .user {
 	background-image: url("icons/user7.svg");
