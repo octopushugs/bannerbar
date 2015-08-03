@@ -134,6 +134,38 @@ padding-bottom: 50%;
 	background-size: 100% 100%;
 	float: center;
 }
+.bell {
+	background-image: url("icons/bell70.svg");
+	display: inline-block;
+	position: relative;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	float: center;
+}
+.inbox {
+	background-image: url("icons/inbox39.svg");
+	display: inline-block;
+	position: relative;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	float: center;
+}
+.star {
+	background-image: url("icons/star207.svg");
+	display: inline-block;
+	position: relative;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	float: center;
+}
+.truck {
+	background-image: url("icons/truck69.svg");
+	display: inline-block;
+	position: relative;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	float: center;
+}
 .facebook-ico {
 	background-image: url("icons/facebook2.svg");
 	display: inline-block;
