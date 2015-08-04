@@ -14,7 +14,7 @@
 	left: 0;
 }
 .banner-item {
-padding-bottom: 50%;
+	padding-bottom: 50%;
 	color: black; /* Change this to make the icons(if SVG) and text a different color */
 }
 .banner-item p {
@@ -30,9 +30,7 @@ padding-bottom: 50%;
 }
 .banner-sub-item {
 	display: inline-block;
-	margin-left: 4%;
-	margin-right: 4%;
-	margin-top: 3%;
+	margin: 3%;
 }
 .banner-sub-item span {
 	height: 32px;
@@ -57,7 +55,7 @@ padding-bottom: 50%;
 	position: absolute;
 	margin-left: 8%;
 	width: 0px;
-	height: 18%;
+	height: auto;
 	overflow: auto;
 	z-index: 3;
 	-webkit-transition: width 0.25s;
@@ -85,6 +83,9 @@ padding-bottom: 50%;
 .banner-item:hover .banner * {
 	display:inline-block;
 }
+.content {
+	margin-left: 8%;
+}
 .user {
 	background-image: url("icons/user7.svg");
 	display: inline-block;
@@ -92,6 +93,7 @@ padding-bottom: 50%;
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	float: center;
+	color: yellow;
 }
 .home {
 	background-image: url("icons/house180.svg");
@@ -228,4 +230,49 @@ padding-bottom: 50%;
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	float: center;
+}
+
+@media screen and (max-device-width: 414px) {
+	.banner {
+		height: 10%;
+		padding: 2%;
+		margin-left: 12%;
+	}
+	.banner:hover {
+		width: 90%;
+	}
+	.banner-base {
+		width: 12%;
+	}
+	.banner-icon {
+		height: 48px;
+		width: 48px;
+	}
+	.banner-item {
+		padding-bottom: 50%;
+		margin-bottom: 100%;
+	}
+	.banner-item p {
+		font-size: 1.7em;
+	}
+	.banner-item span {
+		height: 48px;
+		width: 48px;
+	}
+	.banner-item:hover .banner {
+		width: 90%;
+	}
+	.banner-sub-item {
+		margin: 3%;
+		padding: 1%;
+		word-wrap: break-word;
+	}
+	.banner-sub-item span {
+		height: 48px;
+		width: 48px;
+	}
+	.content {
+		margin-left: 12%;
+	}
+	
 }
