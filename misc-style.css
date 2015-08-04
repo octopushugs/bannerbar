@@ -1,0 +1,29 @@
+.row {
+	width: 100%;
+}
+.col-6 {
+	width: 100%;
+}
+.panel-red {
+	background-color: #B26447;
+	color: white;
+	padding: 1em;
+}
+.panel-teal {
+	background-color: #4EFFDD;
+	color: black;
+	padding: 1em;
+}
+.panel-orange {
+	background-color: #FF6B34;
+	color: white;
+	padding: 1em;
+}
+img.img-rounded {
+	border-radius: 25px;
+}
+img.img-centered {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
