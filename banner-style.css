@@ -40,16 +40,17 @@
 	.banner-base is where you can make adjustments to the color and size of the menu bar.
 */
 .banner-base {
-	background-color: #eeeeee;
+	background-color: #348DFF;
 	width: 8%;
 	height: 100%;
 	padding-top: 2%;
 	padding-bottom: 2%;
 	position: fixed;
 	text-align: center;
+	border: none;
 }
 .banner {
-	background-color: #eeeeee;
+	background-color: #348DFF;
 	float: left;
 	display: table;
 	position: absolute;
@@ -58,6 +59,7 @@
 	height: auto;
 	overflow: auto;
 	z-index: 3;
+	border: none;
 	-webkit-transition: width 0.25s;
 	-webkit-transition-timing-function: linear;
 	transition: width 0.25s;
@@ -72,6 +74,9 @@
 .banner-item:hover .banner {
 	position: fixed;
 	width: 100%;
+}
+.banner-item:hover {
+	background-color: #246EC7;
 }
 .banner:hover {
 	position: fixed;
@@ -249,7 +254,8 @@
 		width: 48px;
 	}
 	.banner-item {
-		padding-bottom: 50%;
+		padding-bottom: 25%;
+		padding-top: 25%;
 		margin-bottom: 100%;
 	}
 	.banner-item p {
