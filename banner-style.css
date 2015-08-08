@@ -14,7 +14,8 @@
 	left: 0;
 }
 .banner-item {
-	padding-bottom: 50%;
+	padding-top: 25%;
+	padding-bottom: 25%;
 	color: black; /* Change this to make the icons(if SVG) and text a different color */
 }
 .banner-item p {
@@ -58,7 +59,7 @@
 	width: 0px;
 	height: auto;
 	overflow: auto;
-	z-index: 3;
+	z-index: auto;
 	border: none;
 	-webkit-transition: width 0.25s;
 	-webkit-transition-timing-function: linear;
