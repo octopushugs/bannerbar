@@ -59,7 +59,7 @@
 	width: 0px;
 	height: auto;
 	overflow: auto;
-	z-index: auto;
+	z-index: 2147483647; /* If it's stupid but it works... TODO make this more elegant */
 	border: none;
 	-webkit-transition: width 0.25s;
 	-webkit-transition-timing-function: linear;
