@@ -46,14 +46,14 @@
 	height: 100%;
 	padding-top: 2%;
 	padding-bottom: 2%;
-	position: fixed;
+	
 	text-align: center;
 	border: none;
 }
 .banner {
 	background-color: #348DFF;
 	float: left;
-	display: table;
+	display: block;
 	position: absolute;
 	margin-left: 8%;
 	width: 0px;
@@ -73,15 +73,16 @@
 	float: left;
 }
 .banner-item:hover .banner {
-	position: fixed;
+	position: absolute;
 	width: 100%;
-}
-.banner-item:hover {
-	background-color: #246EC7;
+	left: 0;
+	right: 0;
 }
 .banner:hover {
-	position: fixed;
+	position: absolute;
 	width: 100%;
+	left: 0;
+	right: 0;
 }
 .banner:hover .banner * {
 	display: inline-block;
@@ -89,8 +90,12 @@
 .banner-item:hover .banner * {
 	display:inline-block;
 }
+.banner-item:hover {
+	background-color: #246EC7;
+}
 .content {
 	margin-left: 8%;
+	position: relative;
 }
 .user {
 	background-image: url("icons/user7.svg");
